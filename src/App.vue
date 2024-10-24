@@ -18,23 +18,10 @@
 
         <!-- If we dont have a token ask the user to authorize with YNAB -->
         <form v-if="!ynab.token">
-          <h1 class="display-4">Congrats!</h1>
-          <p class="lead">You have successfully initialized a new YNAB API Application!</p>
-          <p>The next step is the OAuth configuration, you can
-            <a href="https://github.com/ynab/ynab-api-starter-kit#step-2-obtain-an-oauth-client-id-so-the-app-can-access-the-ynab-api">read
-              detailed instructions in the README.md</a>. Essentially:</p>
-          <ul>
-            <li>Make sure to be logged into your YNAB account, go to your <a href="https://app.ynab.com/settings/developer" target="_blank" rel="noopener noreferrer">YNAB Developer Settings</a> and create a new OAuth Application.</li>
-            <li>Enter the URL of this project as a Redirect URI (in addition to the existing three options), then "Save Application."</li>
-            <li>Copy your Client ID and Redirect URI into the <em>src/config.json</em> file of your project.</li>
-            <li>Then build your amazing app!</li>
-          </ul>
-          <p>If you have any questions please reach out to us at <strong>api@ynab.com</strong>.</p>
-          <p>&nbsp;</p>
-
           <div class="form-group">
-            <h2>Hello!</h2>
-            <p class="lead">If you would like to use this App, please authorize with YNAB!</p>
+            <h2>Welcome!</h2>
+            <p class="lead">Match your detailed Amazon order history to your unapproved YNAB transactions for easy categorizing</p>
+            <p class="lead">To get started, please authorize with YNAB!</p>
             <button @click="authorizeWithYNAB" class="btn btn-primary">Authorize This App With YNAB &gt;</button>
           </div>
         </form>

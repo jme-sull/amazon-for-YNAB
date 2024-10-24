@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h5>Transactions</h5>
+    <h5>Unapproved Amazon Transactions</h5>
     <table class="table">
     <thead>
       <tr>
