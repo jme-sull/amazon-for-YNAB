@@ -1,4 +1,4 @@
 {
   "clientId": "JTHrMXkd68EHEdkcfv8AxZBheE_7f_XnfzTc4yx3GhM",
-  "redirectUri": "https://jme-sull.github.io/amazon-for-YNAB/"
+  "redirectUri": "http://localhost:8080/"
 }
