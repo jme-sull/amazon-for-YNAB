@@ -117,8 +117,9 @@ export default {
       this.error = null;
       this.budgetId = id;
       this.transactions = [];
-      this.api.transactions.getTransactions(id).then((res) => {
-        this.transactions = res.data.transactions;
+      this.api.transactions.getTransactionsByType(id,'unapproved').then((res) => {
+        console.log(res.data.transactions)
+        this.transactions = res.data.transactions.filter(transaction => transaction.payee_name === 'Amazon');
       }).catch((err) => {
         this.error = err.error.detail;
       }).finally(() => {

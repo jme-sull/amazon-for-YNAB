@@ -7,7 +7,6 @@
         <th>Account</th>
         <th>Date</th>
         <th>Payee</th>
-        <th>Category</th>
         <th>Memo</th>
         <th>Amount</th>
       </tr>
@@ -17,7 +16,6 @@
         <td>{{transaction.account_name}}</td>
         <td>{{transaction.date}}</td>
         <td>{{transaction.payee_name}}</td>
-        <td>{{transaction.category_name}}</td>
         <td>{{transaction.memo}}</td>
         <td>{{convertMilliUnitsToCurrencyAmount(transaction.amount).toFixed(2)}}</td>
       </tr>
